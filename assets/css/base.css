@@ -2,6 +2,8 @@
   --white-color: #fff;
   --black-color: #000;
   --text-color: #333;
+  --primary-color: #ee4d2d;
+  --border-color: #dbdbdb;
 }
 
 * {
@@ -24,6 +26,37 @@ html {
 .grid__row {
   display: flex;
   flex-wrap: wrap;
+}
+/* BUTTON STYLE */
+.btn {
+  min-width: 142px;
+  height: 34px;
+  text-decoration: none;
+  border: none;
+  border-radius: 2px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+}
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.btn.btn--disable {
+  cursor: not-allowed;
+  filter: brightness(80%);
+  background-color: #c3c3c3;
+  color: #949494;
+}
+.btn.btn--primary {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+.auth-form__socials-label {
+  margin: 0 24px;
 }
 @keyframes fadeIn {
   from {

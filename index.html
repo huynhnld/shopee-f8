@@ -31,6 +31,7 @@
   <!-- BLOCK ELEMENT MODIFIER -->
   <body>
     <div class="app">
+      <span></span>
       <header class="header">
         <div class="grid">
           <nav class="header__navbar">
@@ -77,12 +78,96 @@
               </li>
             </ul>
             <ul class="header__navbar-list">
-              <li class="header__navbar-item">
+              <li class="header__navbar-item header__navbar-item--has-notify">
                 <a href="" class="header__navbar-item-link"
                   ><a href="" class="header__navber-link"
                     ><i class="header__navber-link-icon fa fa-bell"></i></a
                   >Thông báo</a
                 >
+                <div class="header__notify">
+                  <div class="header__notify-header">
+                    <h3>Thông báo mới nhận</h3>
+                  </div>
+                  <ul class="notify__header-list">
+                    <li class="header__notify-item header__notify-item--viewed">
+                      <a href="" class="header__notify-link"
+                        ><img
+                          src="./assets/img/my-pham.jpg"
+                          alt=""
+                          class="header__notify-img"
+                        />
+                        <div class="header__notify-info">
+                          <span class="header__notify-name"
+                            >Xác thực chính hãng nguồn gốc các sản phẩm
+                            Ohui</span
+                          >
+                          <span class="header__notify-discription"
+                            >Ohui là giải pháp xác thực hàng chính hãng bằng
+                            công nghệ tiên tiến nhất hiện nay</span
+                          >
+                        </div>
+                      </a>
+                    </li>
+                    <li class="header__notify-item header__notify-item--viewed">
+                      <a href="" class="header__notify-link"
+                        ><img
+                          src="./assets/img/my-pham.jpg"
+                          alt=""
+                          class="header__notify-img"
+                        />
+                        <div class="header__notify-info">
+                          <span class="header__notify-name"
+                            >Bộ 6 mỹ phẩm trang điểm PINKFLASH nhân dịp kỷ niệm
+                            1 năm thành lập</span
+                          >
+                          <span class="header__notify-discription"
+                            >PinkFlash là thương hiệu làm đẹp toàn cầu. Tầm nhìn
+                            của chúng tôi là tạo ra những sản phẩm có chất lượng
+                            đáng tin cậy và an toàn cho mọi
+                            #PinkFlashGirl#</span
+                          >
+                        </div>
+                      </a>
+                    </li>
+                    <li class="header__notify-item">
+                      <a href="" class="header__notify-link"
+                        ><img
+                          src="./assets/img/my-pham.jpg"
+                          alt=""
+                          class="header__notify-img"
+                        />
+                        <div class="header__notify-info">
+                          <span class="header__notify-name"
+                            >Mỹ phẩn Ohui chính hãng</span
+                          >
+                          <span class="header__notify-discription"
+                            >Mô tả mỹ phẩm chính hãng</span
+                          >
+                        </div>
+                      </a>
+                    </li>
+                    <li class="header__notify-item">
+                      <a href="" class="header__notify-link"
+                        ><img
+                          src="./assets/img/my-pham.jpg"
+                          alt=""
+                          class="header__notify-img"
+                        />
+                        <div class="header__notify-info">
+                          <span class="header__notify-name"
+                            >Mỹ phẩn Ohui chính hãng</span
+                          >
+                          <span class="header__notify-discription"
+                            >Mô tả mỹ phẩm chính hãng</span
+                          >
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <footer class="header__notify-footer">
+                    <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                  </footer>
+                </div>
               </li>
               <li class="header__navbar-item">
                 <a href="" class="header__navbar-item-link"
@@ -111,7 +196,77 @@
           </nav>
         </div>
       </header>
+      <!-- MODAL LAYOUT -->
+      <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+          <!-- AUTHEN FORM -->
+          <div class="auth-form">
+            <div class="auth-form__container">
+              <div class="auth-form__header">
+                <h3 class="auth-form__heading">Đăng ký</h3>
+                <span class="auth-form__switch-btn">Đăng nhập</span>
+              </div>
+              <div class="auth-form__form">
+                <div class="auth-form__group">
+                  <input
+                    type="text"
+                    class="auth-form__input"
+                    placeholder="Nhập email của bạn"
+                  />
+                </div>
+                <div class="auth-form__group">
+                  <input
+                    type="password"
+                    class="auth-form__input"
+                    placeholder="Nhập mật khẩu"
+                  />
+                </div>
+                <div class="auth-form__group">
+                  <input
+                    type="password"
+                    class="auth-form__input"
+                    placeholder="Nhập lại mật khẩu"
+                  />
+                </div>
+              </div>
+              <div class="auth-form__aside">
+                <span class="auth-form__policy-text">
+                  Bằng việc đăng ký, bạn đã đồng ý với F8-shop về
+                </span>
+                <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+              </div>
+              <div class="auth-form__controls">
+                <button class="btn btn--normal auth-form__controls-back">
+                  TRỞ LẠI</button
+                ><button class="btn btn--primary">ĐĂNG KÝ</button>
+              </div>
+            </div>
 
+            <div class="auth-form__socials">
+              <a
+                class="btn auth-form__socials--facebook btn--size-s btn--with-icon"
+              >
+                <i class="auth-form__socials-icon fab fa-facebook-square"></i
+                ><span class="auth-form__socials-label"
+                  >Kết nối với facebook</span
+                >
+              </a>
+              <a
+                class="btn auth-form__socials--google btn--size-s btn--with-icon auth-form__socials-icon"
+              >
+                <i
+                  class="ml-5 auth-form__socials-ico auth-form__socials--google fab fa-google"
+                ></i
+                ><span class="auth-form__socials-label"
+                  >Kết nối với Google</span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
       <footer class="footer"></footer>
     </div>
   </body>
